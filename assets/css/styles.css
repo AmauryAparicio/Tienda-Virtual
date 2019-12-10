@@ -211,3 +211,17 @@ label, input[type="submit"], input[type="button"], button{
     width: 100px;
     margin-bottom: 10px;
 }
+.product p{
+    margin-bottom: 10px;
+}
+
+/* Footer */
+#footer{
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #222;
+    border-top: 5px solid #01b1ea;
+}
