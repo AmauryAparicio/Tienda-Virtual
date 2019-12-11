@@ -1,14 +1,26 @@
 <?php
-require_once 'config/parameters.php';
+
+session_start();
+
+//conexion al autocargado de controladores
 require_once 'autoload.php';
+//configuracion de la base de datos
+require_once 'config/db.php';
+//parametros especiales
+require_once 'config/parameters.php';
+require_once 'helpers/utils.php';
+//maqueta html del header y del sidebar
 require_once 'views/layouts/header.php';
 require_once 'views/layouts/sidebar.php';
 
+
+//Error de la web
 function show_error(){
 	$error = new ErrorController();
 	$error->index();
 }
 
+// Set de los controladores por medio del metodo GET
 if(isset($_GET['controller'])){
 	$nombre_controlador = $_GET['controller'].'Controller';
 }elseif (!isset($_GET['controller']) && !isset($_GET['action'])) {
@@ -32,5 +44,7 @@ if(class_exists($nombre_controlador)){
 }else{
 	show_error();
 }
+
+//maqueta del footer
 require_once 'views/layouts/footer.php';
 

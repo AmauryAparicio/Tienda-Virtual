@@ -225,3 +225,11 @@ label, input[type="submit"], input[type="button"], button{
     background: #222;
     border-top: 5px solid #01b1ea;
 }
+
+/* Alertas */
+.alert_green{
+    color: green;
+}
+.alert_red{
+    color: red;
+}

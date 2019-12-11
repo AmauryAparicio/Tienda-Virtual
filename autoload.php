@@ -1,4 +1,6 @@
 <?php
+
+//autocargado de los controladores
 function controller_autoload($classname){
     include 'controllers/' . $classname . '.php';
 }
