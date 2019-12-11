@@ -12,13 +12,13 @@
         <!-- Header -->
         <header id="header">
             <div id="logo">
-                <img src="<?= base_url ?>assets/img/camiseta.png" alt="Camiseta Logo">
+                <img src="<?=base_url?>assets/img/camiseta.png" alt="Camiseta Logo">
                 <a href="index.php">
                     <h1>Tienda de Camisetas</h1>
                 </a>
             </div>
         </header>
-
+        
         <!-- Menu -->
         <nav id="menu">
             <ul>
