@@ -81,7 +81,7 @@ class Usuario{
         $this->imagen = $imagen;
     }
 
-    //funcion dedicada a hacer el ingreso de datos por parte del registro a la base de datos
+    //metodo para hacer el ingreso de datos por parte del registro a la base de datos
     public function save(){
         /*Se aplican los get para el ingreso de datos dentro de la query*/
         $sql = "INSERT INTO usuarios VALUES(NULL, '{$this->getNombre()}', '{$this->getApellidos()}', '{$this->getEmail()}', '{$this->getPassword()}', 'user', NULL)";
@@ -96,6 +96,7 @@ class Usuario{
         return $result;
     }
 
+    //metodo para el login de usuarios
     public function login(){
         $result = false;
         $email = $this->email;

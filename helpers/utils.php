@@ -9,4 +9,11 @@ class Utils{
         }
         return $name;
     }
+    public function isAdmin(){
+        if(!isset($_SESSION['admin'])){
+            header("Location:".base_url);
+        } else{
+            return true;
+        }
+    }
 }

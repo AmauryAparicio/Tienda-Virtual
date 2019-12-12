@@ -16,6 +16,15 @@ a:visited{
 a:hover{
     color: #555555;
 }
+table{
+    text-align: center;
+    width: 100%;
+    border: 1px solid #555;
+}
+td{
+    border-top: 1px solid #ccc;
+    padding: 2px;
+}
 /* Container */
 .container{
     width: 80%;
@@ -164,8 +173,13 @@ input[type="submit"], input[type="button"], button, .button{
     cursor: pointer;
 }
 .button{
+    text-align: center;
     background: #33ae3d;
     text-decoration: none;
+}
+.button-small{
+    width: 150px;
+    margin: 0px auto 20px auto;
 }
 label, input[type="submit"], input[type="button"], button{
     display: block;
