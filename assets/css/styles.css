@@ -181,6 +181,9 @@ input[type="submit"], input[type="button"], button, .button{
     width: 150px;
     margin: 0px auto 20px auto;
 }
+.button-small:visited{
+    color: white;
+}
 label, input[type="submit"], input[type="button"], button{
     display: block;
     margin-top: 10px;

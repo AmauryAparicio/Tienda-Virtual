@@ -18,5 +18,12 @@ class CategoriaController{
 
     public function save(){
         Utils::isAdmin();
+        if (isset($_POST) && isset($_POST['nombre'])){
+            //Guardar la categoria en la bd
+            $categoria = new Categoria();
+            $categoria->setNombre($_POST['nombre']);
+            $save = $categoria->save();
+        }
+        header("Location:".base_url."categoria/index");
     }
 }
