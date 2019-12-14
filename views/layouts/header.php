@@ -20,7 +20,7 @@
         </header>
         
         <!-- Menu -->
-        <? $categorias = Utils::showCategorias(); ?>
+        <?php $categorias = Utils::showCategorias(); ?>
         <nav id="menu">
             <ul>
                 <li>

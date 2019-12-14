@@ -40,4 +40,9 @@ class Categoria{
         }
         return $result;
     }
+    public function getMenu(){
+        $sql = "SELECT * fROM categorias ORDER BY id LIMIT 5;";
+        $categorias = $this->db->query($sql);
+        return $categorias;
+    }
 }
