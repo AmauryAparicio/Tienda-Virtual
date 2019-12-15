@@ -22,4 +22,10 @@ class Utils{
         $categorias = $categoria->getMenu();
         return $categorias;
     }
+    public static function showAllCategorias(){
+        require_once 'models/categoria.php';
+        $categoria = new Categoria();
+        $categorias = $categoria->getAll();
+        return $categorias;
+    }
 }
