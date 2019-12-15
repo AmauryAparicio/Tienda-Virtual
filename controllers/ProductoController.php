@@ -3,7 +3,20 @@ require_once 'models/producto.php';
 //controlador de los productos
 class ProductoController{
     public function index(){
+        $producto = new Producto();
+        $productos = $producto->getRandom(6);
         require_once 'views/producto/destacados.php';
+    }
+    public function ver(){
+        if(isset($_GET['id'])){
+            $id = $_GET['id'];
+
+            $producto = new Producto();
+            $producto->setId($id);
+
+            $pro = $producto->getOne();
+        }
+        require_once 'views/producto/ver.php';
     }
     public function gestion(){
         Utils::isAdmin();

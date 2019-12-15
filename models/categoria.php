@@ -31,6 +31,11 @@ class Categoria{
         $categorias = $this->db->query($sql);
         return $categorias;
     }
+    public function getOne(){
+        $sql = "SELECT * FROM categorias WHERE id={$this->getId()};";
+        $categoria = $this->db->query($sql);
+        return $categoria->fetch_object();
+    }
     public function save(){
         $sql = "INSERT INTO categorias VALUES (NULL, '{$this->getNombre()}');";
         $save = $this->db->query($sql);
@@ -41,7 +46,7 @@ class Categoria{
         return $result;
     }
     public function getMenu(){
-        $sql = "SELECT * fROM categorias ORDER BY id LIMIT 5;";
+        $sql = "SELECT * fROM categorias ORDER BY id LIMIT 6;";
         $categorias = $this->db->query($sql);
         return $categorias;
     }
