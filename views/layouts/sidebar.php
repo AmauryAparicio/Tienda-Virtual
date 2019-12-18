@@ -1,6 +1,16 @@
             <!-- Sider -->
             <aside id="lateral">
                 
+                <div class="block_aside" id="carrito">
+                    <h3>Mi carrito</h3>
+                    <ul>
+                        <?php $stats = Utils::statsCarrito();  ?>
+                        <li>Productos (<?=$stats['count']?>)</li>
+                        <li>Total: $0.00</li>
+                        <li><a href="<?=base_url?>varrito/index">Ver el carrito</a></li>
+                    </ul>
+                </div>
+
                 <div class="block_aside" id="login">
 
                     <?php if(!isset($_SESSION['identity'])): ?>

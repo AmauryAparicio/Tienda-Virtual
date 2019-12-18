@@ -318,3 +318,20 @@ label, input[type="submit"], input[type="button"], button{
 .thumb{
     width: 100px;
 }
+/* Carrito de compras */
+.img-carrito{
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.tabla-carrito a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+.tabla-carrito a:hover{
+    color: #01b1ea;
+}
+.tabla-carrito{
+    border: none;
+}
