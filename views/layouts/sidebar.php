@@ -6,8 +6,8 @@
                     <ul>
                         <?php $stats = Utils::statsCarrito();  ?>
                         <li>Productos (<?=$stats['count']?>)</li>
-                        <li>Total: $0.00</li>
-                        <li><a href="<?=base_url?>varrito/index">Ver el carrito</a></li>
+                        <li>Total: $<?=$stats['total']?></li>
+                        <li><a href="<?=base_url?>carrito/index">Ver el carrito</a></li>
                     </ul>
                 </div>
 

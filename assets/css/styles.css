@@ -335,3 +335,22 @@ label, input[type="submit"], input[type="button"], button{
 .tabla-carrito{
     border: none;
 }
+.total-carrito{
+    margin-top: 15px;
+    font-size: 40px;
+    text-align: center;
+    color: #555;
+}
+.button-total{
+    margin-top: 20px;
+}
+.FO{
+    margin-top: 13px;
+    margin-bottom: 15px;
+}
+.FO-form{
+    width: 60%;
+}
+.FO-form input{
+    margin-bottom: 20px;
+}

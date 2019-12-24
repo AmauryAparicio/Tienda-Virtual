@@ -25,3 +25,6 @@
         </tr>
     <?php endforeach; ?>
 </table>
+<?php $stats = Utils::statsCarrito(); ?>
+<h3 class="total-carrito">Total: $<?=$stats['total']?></h3>
+<a href="<?=base_url?>pedido/hacer" class="button button-small button-total">Finalizar Orden</a>
