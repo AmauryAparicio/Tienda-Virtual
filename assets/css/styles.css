@@ -354,3 +354,37 @@ label, input[type="submit"], input[type="button"], button{
 .FO-form input{
     margin-bottom: 20px;
 }
+.conf-p{
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+    border: 1px solid green;
+}
+.conf-h3{
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.sub{
+    text-decoration: underline;
+    color: firebrick;
+}
+.conf-d{
+    list-style: none;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+.conf-t{
+    font-size: 30px;
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.conf-d li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.inner{
+    font-weight: bold;
+}
+.ped-tb a{
+    text-decoration: none;
+}
