@@ -66,9 +66,7 @@ class ProductoController{
                 } else{
                     $save = $producto->save();
                 }
-                if($e){
-                    $_SESSION['productoE'] = "complete";
-                }elseif($save){
+                if($save){
                         $_SESSION['producto'] = "complete";
                 } else{
                         $_SESSION['producto'] = "failed";
