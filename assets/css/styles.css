@@ -388,3 +388,18 @@ label, input[type="submit"], input[type="button"], button{
 .ped-tb a{
     text-decoration: none;
 }
+.det-env p{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.det-env h3{
+    padding-bottom: 5px;
+}
+.det-sel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 35%;
+}
+.btn-env{
+    margin-bottom: 15px;
+}
