@@ -1,7 +1,13 @@
-# Tienda Virtual con PHP
+# Basic e-commerce website
 
-Este es el código para una tienda creada con php, usando el MVC.
+Basic e-commerce website made purely on PHP.
 
-Se pueden crear usuarios, estos pueden ver sus pedidos.
-El administrador puede gestionar pedidos y productos, tanto agregar, eliminar y modificar.
-Tiene un carrito de compras básico, se pueden eliminar productos indiciduales, así como agregar individualmente productos.
+## Features
+
+- Full login and registration system
+- Upload product images and information
+- Buying information stored in database
+- Customizable cart system
+- Models, Views and Controllers architecture
+
+> This webpage was made using HTML5, CSS3 and PHP.
